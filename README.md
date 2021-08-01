@@ -1,34 +1,24 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Instructions
 
-## Getting Started
+In order to run the application, [Git](https://git-scm.com/) and [Node.js](https://nodejs.org/en/download/) must be installed.
 
-First, run the development server:
+```
+# Clone the repository
+git clone https://github.com/rayrayyn/neuroflow-frontend-assessment
 
-```bash
+# Go into the repository
+cd neuroflow-frontend-assessment
+
+# Install the dependencies
+npm install
+
+# Start the Application (Development)
 npm run dev
-# or
-yarn dev
+
+# Open the Application
+Visit http://localhost:3000/ in your browser
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Summary
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+In my project, I chose to use Javascript with React and Next.js. I used Next.js because one of the requirements asked for the page and/or table to not display until the API call was completed and Next.js supports server-side rendering. Taking advantage of this feature, we can fetch the api, populate the table with data, and then send it back to the client. Next.js also comes with API routes built-in so I put the albums data in /api/table. Because I used Next.js, I have to use React which allows me to repurpose components like the table component and it is an overall better frontend development experience. I also used styled-components, which makes it easy to organize css (unnecessary for this project).
